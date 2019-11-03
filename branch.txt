@@ -1,0 +1,17 @@
+Simple Maven Project
+testing git
+hello world
+git status
+git add README.md
+git commit -m "reason"
+git push
+
+
+---
+-hosts: web-servers
+     become: true
+      tasks:
+      - name : copy war onto tom cat server
+        copy :
+         src :  /opt/playbooks/webapp/target/webapp.war
+			dest: /opt/apache-tomcat-8.5.32/webapps
